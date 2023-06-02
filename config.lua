@@ -1,5 +1,3 @@
-
-
 local GuiLibrary = shared.GuiLibrary
 local blockraycast = RaycastParams.new()
 blockraycast.FilterType = Enum.RaycastFilterType.Whitelist
@@ -1365,13 +1363,13 @@ runcode(function()
         return (selectedBed)
     end
 
-    deb = GuiLibrary.ObjectsThatCanBeSaved.UtilityWindow.Api.CreateOptionsButton({
+    runfunction = GuiLibrary.ObjectsThatCanBeSaved.UtilityWindow.Api.CreateOptionsButton({
         Name = "BedTP", 
         Function = function(callback)
             if callback then
-            GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Text = "Ape v6"
-             GuiLibrary["MainGui"].ScaledGui.ClickGui.MainWindow.TextLabel.Text = "Ape v6"
-             GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Version.Text = "Ape v6"
+            GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Text = "Vape v4"
+             GuiLibrary["MainGui"].ScaledGui.ClickGui.MainWindow.TextLabel.Text = "Vape v4"
+             GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Version.Text = "Vape v4"
               GuiLibrary["MainGui"].ScaledGui.ClickGui.Version.Position = UDim2.new(1, -175 - 20, 1, -25)
                warnnotify("BedTP","Enabled.", 5)
                 lplr = game:GetService("Players").LocalPlayer
@@ -1410,7 +1408,7 @@ runcode(function()
                     end
                     -- client:Get("ResetCharacter"):SendToServer()
                 end
-                deb.ToggleButton(false)
+                runfunction.ToggleButton(false)
             end
         end,
         HoverText = "teleportation to a random bed",
