@@ -1,3 +1,6 @@
+if shared.BlacklistedFromConfig then
+game.Players.LocalPlayer:Kick("attempting to bypass :skull:")
+end
 local GuiLibrary = shared.GuiLibrary
 local blockraycast = RaycastParams.new()
 blockraycast.FilterType = Enum.RaycastFilterType.Whitelist
